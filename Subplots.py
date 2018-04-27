@@ -5,20 +5,8 @@ Spyder Editor
 Master Data Visualization with Python Course
 """
 import matplotlib.pyplot as plt
-
-with open('Goals.txt', 'r') as goalData:
-    homeTeamLine = goalData.readline()
-    homeTeamLine = homeTeamLine.strip('\n')
-    
-    #turn into array of integers
-    homeTeamLine = homeTeamLine.split()
-    HomeTeamGoals = [int(x) for x in homeTeamLine]
-    
-    
-    awayTeamLine = goalData.readline()
-    awayTeamLine = awayTeamLine.strip('\n')
-    awayTeamLine = awayTeamLine.split()
-    AwayTeamGoals = [int(x) for x in awayTeamLine]
+from Goals_Module import AwayTeamGoals
+from Goals_Module import HomeTeamGoals
 
 fig1 = plt.figure(figsize = (8, 5))
 
