@@ -14,6 +14,6 @@ print(gameNum)
 
 plt.figure(figsize = (10, 7))
 
-plt.plot(gameNum, HomeTeamGoals, marker='^', c='gray', markerfacecolor='red',linestyle='--')
-plt.plot(gameNum, AwayTeamGoals, marker='^', c='green', markerfacecolor='blue',linestyle=':')
+plt.plot(gameNum, HomeTeamGoals, marker='^', c='gray', markerfacecolor='red',linestyle='--', linewidth=1)
+plt.plot(gameNum, AwayTeamGoals, marker='^', c='green', markerfacecolor='blue',linestyle=':', linewidth=1)
 plt.show()
