@@ -68,6 +68,7 @@ axList[1].set_title('Away Team Goals Over Season', fontdict = {'fontsize': 15, '
 
 # ADD tight_layout() to prevent subplots from overlapping
 plt.tight_layout()
+plt.savefig('Images/lineplot_cust_markers', orientation='portrait')
 plt.show()
 
 # USING LATEX in title and x / y labels: .set_title(r'$ latex_code $')

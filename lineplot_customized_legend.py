@@ -40,5 +40,7 @@ axList[1].set_ylabel('Away Team Goals')
 
 # ADD tight_layout() to prevent subplots from overlapping
 plt.tight_layout()
+
+plt.savefig('Images/lineplot_legend', orientation='portrait')
 plt.show()
 

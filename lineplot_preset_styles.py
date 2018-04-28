@@ -19,7 +19,7 @@ gameNum = [num for num in range(1, len(HomeTeamGoals) + 1)]
 print(plt.style.available)
 
 # To use a style, note that you can override by specifying colors below
-plt.style.use('seaborn-bright') #seaborn-whitegrid I like
+plt.style.use('seaborn-whitegrid') #seaborn-whitegrid I like
 
 
 fig = plt.figure(figsize = (8, 5))
@@ -48,5 +48,6 @@ ax1.spines['top'].set_visible(False)
 
 ax1.set_title('Home Team Goals Over Season', weight='600', fontdict = {'fontsize': 15})
 
+plt.savefig('Images/lineplot_seaborn-whitegrid', orientation='landscape')
 plt.show()
 

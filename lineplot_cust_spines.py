@@ -45,6 +45,6 @@ ax1.yaxis.set_ticks_position('left') #left, right or for xaxis: bottom, top
 #ax1.yaxis.set_ticks([]) or ax1.xaxis...
 
 ax1.set_title('Home Team Goals Over Season', weight='600', fontdict = {'fontsize': 15})
-
+plt.savefig('Images/lineplot_custom_spines', orientation='landscape')
 plt.show()
 

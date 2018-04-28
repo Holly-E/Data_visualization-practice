@@ -34,5 +34,7 @@ plt.text(40, 4, 'test text', style='oblique', #'italic', 'normal'
          verticalalignment= 'bottom', # bottom, top, center of text at y coord 
          #rotation=45,
          weight = 1000) #range 0 - 1000 (bold)
+
+plt.savefig('Images/lineplot_txt_annotation', orientation='landscape')
 plt.show()
 

@@ -27,4 +27,6 @@ plt.scatter(HomeTeamGoals, AwayTeamGoals, s=40, c='orange', marker='^', alpha = 
 plt.figure('wide')
 
 plt.scatter(HomeTeamGoals, AwayTeamGoals, s=40, c='black', marker='^', alpha = .3)
+
+plt.savefig('Images/scatterplot', orientation='portrait') #Note it only saves the 'wide' image
 plt.show()
