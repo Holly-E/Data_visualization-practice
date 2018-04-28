@@ -14,14 +14,21 @@ from Goals_Module import AwayTeamGoals
 from Goals_Module import HomeTeamGoals
 
 gameNum = [num for num in range(1, len(HomeTeamGoals) + 1)]
-print(gameNum)
+
+# To view AVAILABLE PRESET STYLES
+print(plt.style.available)
+
+# To use a style, note that you can override by specifying colors below
+plt.style.use('seaborn-bright') #seaborn-whitegrid I like
+
 
 fig = plt.figure(figsize = (8, 5))
 
 ax1 = fig.add_subplot(1, 1, 1)
 
-ax1.plot(gameNum, HomeTeamGoals, marker='^', c='gray', markerfacecolor='red',linestyle='--', linewidth=1, label='HTG')
+ax1.plot(gameNum, HomeTeamGoals, marker='^',linestyle='--', linewidth=1, label='HTG')
 
+ax1.plot(gameNum, AwayTeamGoals, marker='^',linestyle='--', linewidth=1, label='ATG')
 
 ax1.set_xlim(-1, 145) #could 'flip' graph by setting limits as (145, -1)
 ax1.set_ylim(-1, 7)
@@ -34,15 +41,10 @@ ax1.xaxis.set_minor_locator(MultipleLocator(5))
 ax1.set_ylabel('Home Team Goals')
 ax1.legend(loc = 'best')
 
-# Customize SPINE visibility
-ax1.spines['right'].set_visible(False) #bottom, right, top, left
+
+ax1.spines['right'].set_visible(False) 
 ax1.spines['top'].set_visible(False)
 
-#To specify which sides DO have tick marks
-ax1.yaxis.set_ticks_position('left') #left, right or for xaxis: bottom, top
-
-#To completely remove all ticks, set to an empty list:
-#ax1.yaxis.set_ticks([]) or ax1.xaxis...
 
 ax1.set_title('Home Team Goals Over Season', weight='600', fontdict = {'fontsize': 15})
 
