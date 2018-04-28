@@ -1,2 +1,2 @@
-# Data_visualization-practice
-Practice using matplotlib, following along Master Data Visualization Course
+# Data Visualization 
+Practice using matplotlib, in tandem with Master Data Visualization Course 
