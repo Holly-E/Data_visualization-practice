@@ -38,6 +38,6 @@ ax1.set_ylabel('Average Goals Scored')
 ax1.set_title('Home Team Goals Over Season', weight='600', fontdict = {'fontsize': 15})
 
 
-plt.savefig('Images/bar_graph', orientation='portrait')
+#plt.savefig('Images/bar_graph', orientation='portrait')
 plt.show()
 
