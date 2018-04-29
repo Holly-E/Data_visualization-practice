@@ -18,7 +18,7 @@ fig = plt.figure(figsize = (5, 5))
 
 # 2D Histogram (x, y)
 plt.hist2d(HomeTeamGoals, AwayTeamGoals, bins=[7, 6], #number of bins for [xbins, ybins]
-         )
+         cmap = plt.cm.hot_r) #specify which color map, many available. _r to reverse
 
 # If we have no subplots and are only plotting on the plt. can add a colorbar this way:
 plt.colorbar()
@@ -28,6 +28,6 @@ plt.title('Number of Goals Per Game')
 plt.xlabel('Home Team Goals')
 plt.ylabel('Away Team Goals')
 
-plt.savefig('Images/2D_histogram', orientation='portrait')
+#plt.savefig('Images/2D_histogram_hot_r', orientation='portrait')
 plt.show()
 
