@@ -23,7 +23,7 @@ ax1 = fig.add_subplot(1, 1, 1)
 
 # Pie chart - if sum of values is > 1, chart will be normalized to a fraction x[i]/sum(x)
 # if sum of values < 1, chart will be missing a segment
-ax1.pie([totalGoalsScoredHome, totalGoalsScoredAway, 200], labels=['Home Team', 'Away Team', 'Other'],
+ax1.pie([totalGoalsScoredHome, totalGoalsScoredAway, 200], labels=['Home Team', 'Away', 'Other'],
         labeldistance= 1.1, #default distance from center 1.1
         colors= ['red', 'blue', 'black'],
         explode = [0, .1, 0], #pops out part of chart, each value corresponds to index of x
@@ -34,6 +34,6 @@ ax1.pie([totalGoalsScoredHome, totalGoalsScoredAway, 200], labels=['Home Team', 
 
 ax1.set_title('Goals Over Season', weight='600', fontdict = {'fontsize': 15})
 
-plt.savefig('Images/piechart', orientation='portrait')
+plt.savefig('Images/piechart', orientation='landscape')
 plt.show()
 
