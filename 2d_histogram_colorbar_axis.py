@@ -35,6 +35,6 @@ ax1.set_title('Number of Goals Per Game')
 ax1.set_xlabel('Home Team Goals')
 ax1.set_ylabel('Away Team Goals')
 
-plt.savefig('Images/2D_histo_colorbar_with_axis', orientation='portrait')
+#plt.savefig('Images/2D_histo_colorbar_with_axis', orientation='portrait')
 plt.show()
 
