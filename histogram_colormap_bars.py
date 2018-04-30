@@ -46,6 +46,6 @@ ax1.set_ylabel('Games')
 ax1.set_title('Home Team Goals Over Season', weight='600')
 
 
-plt.savefig('Images/histogram_colormapped', orientation='landscape')
+#plt.savefig('Images/histogram_colormapped', orientation='landscape')
 plt.show()
 
